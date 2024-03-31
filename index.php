@@ -32,7 +32,7 @@ session_start();
             echo '</div>';
         } else if((isset($_SESSION['errors']))) {
             echo '<div class="alert alert-primary" id="form-success" role="alert">
-                      Форма отправлена успешно, в ближайшее время мы свяжемся с вами
+                      Форма отправлена успешно
                     </div>';
         }
         unset($_SESSION['errors']);
@@ -77,7 +77,7 @@ session_start();
                 <input name="checkbox" type="checkbox">
             </label>
         </p>
-        <button type="submit" class="btn btn-success">Отправить форму на сервер</button>
+        <button type="submit" class="btn btn-success">Отправить</button>
     </form>
 </div>
 
